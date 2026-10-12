@@ -17,12 +17,7 @@ namespace Kasirku_Winforms
             InitializeComponent();
         }
 
-        private void tplDasar_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void guna2Button1_Click(object sender, EventArgs e)
+        private void btnEnter_Click(object sender, EventArgs e)
         {
             Main main = new Main();
             main.Show();

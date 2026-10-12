@@ -30,139 +30,46 @@
         {
             this.components = new System.ComponentModel.Container();
             this.El = new Guna.UI2.WinForms.Guna2Elipse(this.components);
-            this.tplDasar = new System.Windows.Forms.TableLayoutPanel();
-            this.pnlCardDasar = new Guna.UI2.WinForms.Guna2Panel();
-            this.pnlCardLogin = new System.Windows.Forms.TableLayoutPanel();
-            this.tlpHeader = new System.Windows.Forms.TableLayoutPanel();
+            this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.btnEnter = new Guna.UI2.WinForms.Guna2Button();
-            this.tplDasar.SuspendLayout();
-            this.pnlCardDasar.SuspendLayout();
-            this.pnlCardLogin.SuspendLayout();
-            this.tlpHeader.SuspendLayout();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.tbPassword = new Guna.UI2.WinForms.Guna2TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.tbUsename = new Guna.UI2.WinForms.Guna2TextBox();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.tableLayoutPanel1.SuspendLayout();
+            this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // El
             // 
+            this.El.BorderRadius = 30;
             this.El.TargetControl = this;
             // 
-            // tplDasar
+            // guna2ControlBox1
             // 
-            this.tplDasar.ColumnCount = 3;
-            this.tplDasar.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tplDasar.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tplDasar.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tplDasar.Controls.Add(this.pnlCardDasar, 1, 1);
-            this.tplDasar.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tplDasar.Location = new System.Drawing.Point(0, 0);
-            this.tplDasar.Name = "tplDasar";
-            this.tplDasar.RowCount = 3;
-            this.tplDasar.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tplDasar.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tplDasar.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tplDasar.Size = new System.Drawing.Size(1920, 1080);
-            this.tplDasar.TabIndex = 0;
-            this.tplDasar.Paint += new System.Windows.Forms.PaintEventHandler(this.tplDasar_Paint);
-            // 
-            // pnlCardDasar
-            // 
-            this.pnlCardDasar.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pnlCardDasar.BorderColor = System.Drawing.Color.Black;
-            this.pnlCardDasar.BorderRadius = 25;
-            this.pnlCardDasar.BorderThickness = 1;
-            this.pnlCardDasar.Controls.Add(this.pnlCardLogin);
-            this.pnlCardDasar.Location = new System.Drawing.Point(639, 360);
-            this.pnlCardDasar.Margin = new System.Windows.Forms.Padding(0);
-            this.pnlCardDasar.Name = "pnlCardDasar";
-            this.pnlCardDasar.Padding = new System.Windows.Forms.Padding(11);
-            this.pnlCardDasar.Size = new System.Drawing.Size(639, 360);
-            this.pnlCardDasar.TabIndex = 5;
-            // 
-            // pnlCardLogin
-            // 
-            this.pnlCardLogin.ColumnCount = 1;
-            this.pnlCardLogin.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.pnlCardLogin.Controls.Add(this.tlpHeader, 0, 0);
-            this.pnlCardLogin.Controls.Add(this.btnEnter, 0, 2);
-            this.pnlCardLogin.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlCardLogin.Location = new System.Drawing.Point(11, 11);
-            this.pnlCardLogin.Margin = new System.Windows.Forms.Padding(0);
-            this.pnlCardLogin.Name = "pnlCardLogin";
-            this.pnlCardLogin.RowCount = 3;
-            this.pnlCardLogin.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.pnlCardLogin.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.pnlCardLogin.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.pnlCardLogin.Size = new System.Drawing.Size(617, 338);
-            this.pnlCardLogin.TabIndex = 1;
-            // 
-            // tlpHeader
-            // 
-            this.tlpHeader.BackColor = System.Drawing.Color.Black;
-            this.tlpHeader.ColumnCount = 2;
-            this.tlpHeader.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tlpHeader.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tlpHeader.Controls.Add(this.pictureBox1, 0, 0);
-            this.tlpHeader.Controls.Add(this.tableLayoutPanel1, 1, 0);
-            this.tlpHeader.Location = new System.Drawing.Point(0, 0);
-            this.tlpHeader.Margin = new System.Windows.Forms.Padding(0);
-            this.tlpHeader.Name = "tlpHeader";
-            this.tlpHeader.RowCount = 1;
-            this.tlpHeader.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tlpHeader.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tlpHeader.Size = new System.Drawing.Size(617, 112);
-            this.tlpHeader.TabIndex = 2;
+            this.guna2ControlBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.guna2ControlBox1.FillColor = System.Drawing.Color.Black;
+            this.guna2ControlBox1.IconColor = System.Drawing.Color.White;
+            this.guna2ControlBox1.Location = new System.Drawing.Point(743, 3);
+            this.guna2ControlBox1.Name = "guna2ControlBox1";
+            this.guna2ControlBox1.Size = new System.Drawing.Size(56, 36);
+            this.guna2ControlBox1.TabIndex = 0;
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Kasirku_Winforms.Properties.Resources.banyu_nobg;
-            this.pictureBox1.Location = new System.Drawing.Point(3, 3);
+            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(302, 106);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 3;
+            this.pictureBox1.Size = new System.Drawing.Size(267, 85);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
-            // 
-            // tableLayoutPanel1
-            // 
-            this.tableLayoutPanel1.ColumnCount = 1;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.Controls.Add(this.label1, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.label2, 0, 1);
-            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(308, 0);
-            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(0);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 2;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(309, 112);
-            this.tableLayoutPanel1.TabIndex = 1;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(3, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(40, 16);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Login";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(3, 56);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(188, 16);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Aplikasi Kasir dan Manajemen";
             // 
             // btnEnter
             // 
@@ -170,36 +77,145 @@
             this.btnEnter.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnEnter.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnEnter.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnEnter.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnEnter.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnEnter.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.btnEnter.Font = new System.Drawing.Font("Plus Jakarta Sans", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEnter.ForeColor = System.Drawing.Color.White;
-            this.btnEnter.Location = new System.Drawing.Point(0, 224);
-            this.btnEnter.Margin = new System.Windows.Forms.Padding(0);
+            this.btnEnter.Location = new System.Drawing.Point(0, 394);
             this.btnEnter.Name = "btnEnter";
-            this.btnEnter.Size = new System.Drawing.Size(617, 114);
-            this.btnEnter.TabIndex = 3;
-            this.btnEnter.Text = "Enter";
-            this.btnEnter.Click += new System.EventHandler(this.guna2Button1_Click);
+            this.btnEnter.Size = new System.Drawing.Size(800, 56);
+            this.btnEnter.TabIndex = 2;
+            this.btnEnter.Text = "ENTER";
+            this.btnEnter.Click += new System.EventHandler(this.btnEnter_Click);
+            // 
+            // panel1
+            // 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel1.Controls.Add(this.tbUsename);
+            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.tbPassword);
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Location = new System.Drawing.Point(268, 151);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(259, 204);
+            this.panel1.TabIndex = 3;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Plus Jakarta Sans", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(13, 14);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(72, 22);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Username";
+            // 
+            // tbPassword
+            // 
+            this.tbPassword.BorderRadius = 15;
+            this.tbPassword.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.tbPassword.DefaultText = "";
+            this.tbPassword.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.tbPassword.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.tbPassword.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.tbPassword.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.tbPassword.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.tbPassword.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.tbPassword.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.tbPassword.Location = new System.Drawing.Point(16, 129);
+            this.tbPassword.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.tbPassword.Name = "tbPassword";
+            this.tbPassword.PlaceholderText = "";
+            this.tbPassword.SelectedText = "";
+            this.tbPassword.Size = new System.Drawing.Size(232, 51);
+            this.tbPassword.TabIndex = 1;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Plus Jakarta Sans", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(13, 105);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(70, 22);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "Password";
+            // 
+            // tbUsename
+            // 
+            this.tbUsename.BorderRadius = 15;
+            this.tbUsename.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.tbUsename.DefaultText = "";
+            this.tbUsename.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.tbUsename.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.tbUsename.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.tbUsename.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.tbUsename.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.tbUsename.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.tbUsename.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.tbUsename.Location = new System.Drawing.Point(16, 36);
+            this.tbUsename.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.tbUsename.Name = "tbUsename";
+            this.tbUsename.PlaceholderText = "";
+            this.tbUsename.SelectedText = "";
+            this.tbUsename.Size = new System.Drawing.Size(232, 51);
+            this.tbUsename.TabIndex = 3;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.Black;
+            this.panel2.Controls.Add(this.label4);
+            this.panel2.Controls.Add(this.label3);
+            this.panel2.Controls.Add(this.pictureBox1);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(800, 100);
+            this.panel2.TabIndex = 4;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Black;
+            this.label3.Font = new System.Drawing.Font("Plus Jakarta Sans", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(605, 61);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(89, 22);
+            this.label3.TabIndex = 5;
+            this.label3.Text = "Aplikasi Kasir";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Black;
+            this.label4.Font = new System.Drawing.Font("Plus Jakarta Sans", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(600, 16);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(104, 50);
+            this.label4.TabIndex = 6;
+            this.label4.Text = "Login";
             // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(245)))), ((int)(((byte)(249)))));
-            this.ClientSize = new System.Drawing.Size(1920, 1080);
-            this.Controls.Add(this.tplDasar);
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.btnEnter);
+            this.Controls.Add(this.guna2ControlBox1);
+            this.Controls.Add(this.panel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.tplDasar.ResumeLayout(false);
-            this.pnlCardDasar.ResumeLayout(false);
-            this.pnlCardLogin.ResumeLayout(false);
-            this.tlpHeader.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.tableLayoutPanel1.ResumeLayout(false);
-            this.tableLayoutPanel1.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -207,15 +223,17 @@
         #endregion
 
         private Guna.UI2.WinForms.Guna2Elipse El;
-        private System.Windows.Forms.TableLayoutPanel tplDasar;
-        private Guna.UI2.WinForms.Guna2Panel pnlCardDasar;
-        private System.Windows.Forms.TableLayoutPanel pnlCardLogin;
-        private System.Windows.Forms.TableLayoutPanel tlpHeader;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private System.Windows.Forms.Label label1;
+        private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panel1;
+        private Guna.UI2.WinForms.Guna2TextBox tbUsename;
         private System.Windows.Forms.Label label2;
+        private Guna.UI2.WinForms.Guna2TextBox tbPassword;
+        private System.Windows.Forms.Label label1;
         private Guna.UI2.WinForms.Guna2Button btnEnter;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label3;
     }
 }
 
