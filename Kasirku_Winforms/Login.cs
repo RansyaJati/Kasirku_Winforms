@@ -19,9 +19,17 @@ namespace Kasirku_Winforms
 
         private void btnEnter_Click(object sender, EventArgs e)
         {
-            Main main = new Main();
-            main.Show();
-            this.Hide();
+            if (tbUsername.Text == "" && tbPassword.Text == "")
+            {
+                MessageBox.Show("Username dan Password tidak boleh kosong!", "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            else
+            {
+                Main main = new Main();
+                main.Show();
+                this.Hide();
+            }
+            
         }
     }
 }

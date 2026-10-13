@@ -34,13 +34,13 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnEnter = new Guna.UI2.WinForms.Guna2Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.tbPassword = new Guna.UI2.WinForms.Guna2TextBox();
+            this.tbUsername = new Guna.UI2.WinForms.Guna2TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.tbUsename = new Guna.UI2.WinForms.Guna2TextBox();
+            this.tbPassword = new Guna.UI2.WinForms.Guna2TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -92,7 +92,7 @@
             this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel1.Controls.Add(this.tbUsename);
+            this.panel1.Controls.Add(this.tbUsername);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.tbPassword);
             this.panel1.Controls.Add(this.label1);
@@ -101,35 +101,25 @@
             this.panel1.Size = new System.Drawing.Size(259, 204);
             this.panel1.TabIndex = 3;
             // 
-            // label1
+            // tbUsername
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Plus Jakarta Sans", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(13, 14);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(72, 22);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Username";
-            // 
-            // tbPassword
-            // 
-            this.tbPassword.BorderRadius = 15;
-            this.tbPassword.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.tbPassword.DefaultText = "";
-            this.tbPassword.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.tbPassword.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.tbPassword.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.tbPassword.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.tbPassword.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.tbPassword.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.tbPassword.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.tbPassword.Location = new System.Drawing.Point(16, 129);
-            this.tbPassword.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.tbPassword.Name = "tbPassword";
-            this.tbPassword.PlaceholderText = "";
-            this.tbPassword.SelectedText = "";
-            this.tbPassword.Size = new System.Drawing.Size(232, 51);
-            this.tbPassword.TabIndex = 1;
+            this.tbUsername.BorderRadius = 15;
+            this.tbUsername.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.tbUsername.DefaultText = "";
+            this.tbUsername.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.tbUsername.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.tbUsername.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.tbUsername.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.tbUsername.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.tbUsername.Font = new System.Drawing.Font("Plus Jakarta Sans", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbUsername.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.tbUsername.Location = new System.Drawing.Point(16, 36);
+            this.tbUsername.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.tbUsername.Name = "tbUsername";
+            this.tbUsername.PlaceholderText = "";
+            this.tbUsername.SelectedText = "";
+            this.tbUsername.Size = new System.Drawing.Size(232, 51);
+            this.tbUsername.TabIndex = 3;
             // 
             // label2
             // 
@@ -141,25 +131,35 @@
             this.label2.TabIndex = 2;
             this.label2.Text = "Password";
             // 
-            // tbUsename
+            // tbPassword
             // 
-            this.tbUsename.BorderRadius = 15;
-            this.tbUsename.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.tbUsename.DefaultText = "";
-            this.tbUsename.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.tbUsename.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.tbUsename.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.tbUsename.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.tbUsename.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.tbUsename.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.tbUsename.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.tbUsename.Location = new System.Drawing.Point(16, 36);
-            this.tbUsename.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.tbUsename.Name = "tbUsename";
-            this.tbUsename.PlaceholderText = "";
-            this.tbUsename.SelectedText = "";
-            this.tbUsename.Size = new System.Drawing.Size(232, 51);
-            this.tbUsename.TabIndex = 3;
+            this.tbPassword.BorderRadius = 15;
+            this.tbPassword.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.tbPassword.DefaultText = "";
+            this.tbPassword.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.tbPassword.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.tbPassword.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.tbPassword.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.tbPassword.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.tbPassword.Font = new System.Drawing.Font("Plus Jakarta Sans", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbPassword.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.tbPassword.Location = new System.Drawing.Point(16, 129);
+            this.tbPassword.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.tbPassword.Name = "tbPassword";
+            this.tbPassword.PlaceholderText = "";
+            this.tbPassword.SelectedText = "";
+            this.tbPassword.Size = new System.Drawing.Size(232, 51);
+            this.tbPassword.TabIndex = 1;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Plus Jakarta Sans", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(13, 14);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(72, 22);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Username";
             // 
             // panel2
             // 
@@ -173,18 +173,6 @@
             this.panel2.Size = new System.Drawing.Size(800, 100);
             this.panel2.TabIndex = 4;
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Black;
-            this.label3.Font = new System.Drawing.Font("Plus Jakarta Sans", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(605, 61);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(89, 22);
-            this.label3.TabIndex = 5;
-            this.label3.Text = "Aplikasi Kasir";
-            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -196,6 +184,18 @@
             this.label4.Size = new System.Drawing.Size(104, 50);
             this.label4.TabIndex = 6;
             this.label4.Text = "Login";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Black;
+            this.label3.Font = new System.Drawing.Font("Plus Jakarta Sans", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(605, 61);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(89, 22);
+            this.label3.TabIndex = 5;
+            this.label3.Text = "Aplikasi Kasir";
             // 
             // Login
             // 
@@ -227,7 +227,7 @@
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel1;
-        private Guna.UI2.WinForms.Guna2TextBox tbUsename;
+        private Guna.UI2.WinForms.Guna2TextBox tbUsername;
         private System.Windows.Forms.Label label2;
         private Guna.UI2.WinForms.Guna2TextBox tbPassword;
         private System.Windows.Forms.Label label1;

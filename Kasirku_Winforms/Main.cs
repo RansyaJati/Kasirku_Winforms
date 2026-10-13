@@ -16,6 +16,21 @@ namespace Kasirku_Winforms
         public Main()
         {
             InitializeComponent();
+
+            UpdateDateTime();
+
+            timer1.Interval = 1000;
+            timer1.Tick += timer1_Tick;
+            timer1.Start();
+        }
+        private void UpdateDateTime()
+        {
+            lbTanggal.Text = DateTime.Now.ToString("dddd, dd MMMM yyyy");
+            lbWaktu.Text = DateTime.Now.ToString("HH:mm:ss");
+        }
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            UpdateDateTime();
         }
 
         public void FormKasir()
@@ -34,7 +49,7 @@ namespace Kasirku_Winforms
         {
             FormKasir();
             lbJudul.Text = "Kasir (F1)";
-            lbDeskripsi.Text = "Scan barcode / ketik kode atau nama + Enter. F5 = Bayar, F6 = Reset, F7 = Cetak Struk PDF";
+            lbDeskripsi.Text = "Scan barcode / ketik kode atau nama + Enter. F3 = Bayar, F4 = Cetak Struk, F5 = Reset";
         }
 
         private void pnlIsi_Paint(object sender, PaintEventArgs e)
@@ -42,6 +57,21 @@ namespace Kasirku_Winforms
 
         }
 
-        
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void btnKasir_Click(object sender, EventArgs e)
+        {
+            FormKasir();
+            lbJudul.Text = "Kasir (F1)";
+            lbDeskripsi.Text = "Scan barcode / ketik kode atau nama + Enter. F3 = Bayar, F4 = Cetak Struk, F5 = Reset";
+        }
+
+        private void btnRiwayat_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Fitur Riwayat belum tersedia.", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
     }
 }
