@@ -40,17 +40,16 @@
             this.tlpMenu = new System.Windows.Forms.TableLayoutPanel();
             this.pbLogo = new System.Windows.Forms.PictureBox();
             this.btnExit = new Guna.UI2.WinForms.Guna2Button();
-            this.pnlIsi = new System.Windows.Forms.Panel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.lbTanggal = new System.Windows.Forms.Label();
             this.lbWaktu = new System.Windows.Forms.Label();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.btnKasir = new Guna.UI2.WinForms.Guna2Button();
-            this.btnRiwayat = new Guna.UI2.WinForms.Guna2Button();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
+            this.pnlIsi = new System.Windows.Forms.Panel();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.tlpDasar.SuspendLayout();
             this.tlpHeader.SuspendLayout();
             this.pnlJudul.SuspendLayout();
@@ -169,7 +168,6 @@
             this.tlpMenu.Controls.Add(this.btnExit, 5, 0);
             this.tlpMenu.Controls.Add(this.tableLayoutPanel1, 1, 0);
             this.tlpMenu.Controls.Add(this.btnKasir, 2, 0);
-            this.tlpMenu.Controls.Add(this.btnRiwayat, 3, 0);
             this.tlpMenu.Controls.Add(this.tableLayoutPanel2, 4, 0);
             this.tlpMenu.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tlpMenu.Location = new System.Drawing.Point(0, 0);
@@ -209,16 +207,6 @@
             this.btnExit.Text = "Esc | Keluar";
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
-            // pnlIsi
-            // 
-            this.pnlIsi.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlIsi.Location = new System.Drawing.Point(0, 185);
-            this.pnlIsi.Margin = new System.Windows.Forms.Padding(0);
-            this.pnlIsi.Name = "pnlIsi";
-            this.pnlIsi.Size = new System.Drawing.Size(1920, 895);
-            this.pnlIsi.TabIndex = 1;
-            this.pnlIsi.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlIsi_Paint);
-            // 
             // tableLayoutPanel1
             // 
             this.tableLayoutPanel1.ColumnCount = 2;
@@ -232,7 +220,7 @@
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 92F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(388, 92);
             this.tableLayoutPanel1.TabIndex = 2;
             // 
@@ -277,23 +265,6 @@
             this.btnKasir.Text = "F1 | Kasir";
             this.btnKasir.Click += new System.EventHandler(this.btnKasir_Click);
             // 
-            // btnRiwayat
-            // 
-            this.btnRiwayat.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.btnRiwayat.BorderRadius = 11;
-            this.btnRiwayat.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnRiwayat.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnRiwayat.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnRiwayat.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnRiwayat.Font = new System.Drawing.Font("Plus Jakarta Sans", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRiwayat.ForeColor = System.Drawing.Color.White;
-            this.btnRiwayat.Location = new System.Drawing.Point(898, 23);
-            this.btnRiwayat.Name = "btnRiwayat";
-            this.btnRiwayat.Size = new System.Drawing.Size(180, 45);
-            this.btnRiwayat.TabIndex = 4;
-            this.btnRiwayat.Text = "F2 | Riwayat";
-            this.btnRiwayat.Click += new System.EventHandler(this.btnRiwayat_Click);
-            // 
             // tableLayoutPanel2
             // 
             this.tableLayoutPanel2.ColumnCount = 3;
@@ -308,25 +279,9 @@
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 1;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 92F));
             this.tableLayoutPanel2.Size = new System.Drawing.Size(369, 92);
             this.tableLayoutPanel2.TabIndex = 5;
-            // 
-            // guna2Button1
-            // 
-            this.guna2Button1.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.guna2Button1.BorderRadius = 11;
-            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button1.Font = new System.Drawing.Font("Plus Jakarta Sans", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button1.ForeColor = System.Drawing.Color.White;
-            this.guna2Button1.Location = new System.Drawing.Point(3, 23);
-            this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.Size = new System.Drawing.Size(116, 45);
-            this.guna2Button1.TabIndex = 4;
-            this.guna2Button1.Text = "F3 | Bayar";
             // 
             // guna2Button2
             // 
@@ -344,6 +299,22 @@
             this.guna2Button2.TabIndex = 5;
             this.guna2Button2.Text = "F4 | Struk";
             // 
+            // guna2Button1
+            // 
+            this.guna2Button1.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.guna2Button1.BorderRadius = 11;
+            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button1.Font = new System.Drawing.Font("Plus Jakarta Sans", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2Button1.ForeColor = System.Drawing.Color.White;
+            this.guna2Button1.Location = new System.Drawing.Point(3, 23);
+            this.guna2Button1.Name = "guna2Button1";
+            this.guna2Button1.Size = new System.Drawing.Size(116, 45);
+            this.guna2Button1.TabIndex = 4;
+            this.guna2Button1.Text = "F3 | Bayar";
+            // 
             // guna2Button3
             // 
             this.guna2Button3.Anchor = System.Windows.Forms.AnchorStyles.Left;
@@ -359,6 +330,16 @@
             this.guna2Button3.Size = new System.Drawing.Size(118, 45);
             this.guna2Button3.TabIndex = 6;
             this.guna2Button3.Text = "F5 | Reset";
+            // 
+            // pnlIsi
+            // 
+            this.pnlIsi.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlIsi.Location = new System.Drawing.Point(0, 185);
+            this.pnlIsi.Margin = new System.Windows.Forms.Padding(0);
+            this.pnlIsi.Name = "pnlIsi";
+            this.pnlIsi.Size = new System.Drawing.Size(1920, 895);
+            this.pnlIsi.TabIndex = 1;
+            this.pnlIsi.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlIsi_Paint);
             // 
             // Main
             // 
@@ -407,7 +388,6 @@
         private System.Windows.Forms.Label lbWaktu;
         private System.Windows.Forms.Timer timer1;
         private Guna.UI2.WinForms.Guna2Button btnKasir;
-        private Guna.UI2.WinForms.Guna2Button btnRiwayat;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private Guna.UI2.WinForms.Guna2Button guna2Button3;
         private Guna.UI2.WinForms.Guna2Button guna2Button2;
